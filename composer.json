@@ -1,0 +1,16 @@
+{
+    "name": "kiss/debug",
+    "type": "library",
+    "require": {
+        "php": "^7.3"
+    },
+    "autoload": {
+        "files": [
+            "dd.php",
+            "dump.php"
+        ],
+        "psr-4": {
+            "Kiss\\": "src/"
+        }
+    }
+}
