@@ -8,10 +8,9 @@ if (!function_exists('dump'))
      */
     function dump(&$expression, &...$expressions)
     {
-        \Kiss\Dumper::dump($expression);
+        \Kiss\Debug::dump($expression);
 
         foreach ($expressions as &$expression)
-            \Kiss\Dumper::dump($expression);
+            \Kiss\Debug::dump($expression);
     }
 }
-

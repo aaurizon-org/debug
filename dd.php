@@ -10,10 +10,10 @@ if (!function_exists('dd'))
     {
         while (ob_end_clean());
 
-        \Kiss\Dumper::dump($expression);
+        \Kiss\Debug::dump($expression);
 
         foreach ($expressions as &$expression)
-            \Kiss\Dumper::dump($expression);
+            \Kiss\Debug::dump($expression);
 
         exit;
     }
